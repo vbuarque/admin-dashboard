@@ -1,0 +1,233 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #29292E;
+}
+
+.container  {
+    position: relative;
+    max-width: 380px;
+    width: 100%;
+    background-color: #F8F8F8; 
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*Estilização do formulário de login*/
+.container .form {
+    padding: 35px;
+}
+
+.container .form .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.container .form .title img {
+    width: 48px;
+    height: 48px;
+}
+
+.container .form .title .title-login {
+    margin-top: 12px;
+    font-size: 19px;
+    color: #A4A6B3;
+    font-weight: 700;
+}
+
+.container .form .subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+
+.container .form .subtitle h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.container .form .subtitle span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A4A6B3;
+}
+
+.form .input-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 42px;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 24px;
+}
+
+.input-field {
+
+    .input-email {
+        height: 100%;
+        width: 100%;
+        padding: 16px;
+        background-color: #FCFDFE;
+    
+        border-radius: 8px;
+        border: 1px solid #F0F1F7;
+    
+        font-size: 14px;
+        font-weight: 400;
+        color: #4B506D;
+        outline: none;
+    
+        transition: all 0.2s ease;
+    }
+
+    .input-password {
+        height: 100%;
+        width: 100%;
+        padding: 16px;
+        background-color: #FCFDFE;
+    
+        border-radius: 8px 0px 0px 8px;
+        border-top: 1px solid #F0F1F7;
+        border-bottom: 1px solid #F0F1F7;
+        border-left: 1px solid #F0F1F7;
+        border-right: 1px solid #F0F1F7;
+    
+        font-size: 14px;
+        font-weight: 400;
+        color: #4B506D;
+        outline: none;
+    
+        transition: all 0.2s ease;
+    }
+
+    .icon-container {
+        width: 42px;
+        height: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 0px 8px 8px 0px;
+        border: 1px solid #F0F1F7;
+        border-left: none;
+
+        background-color: #FCFDFE;
+
+        cursor: pointer;
+    }
+
+}
+
+.input-field input:is(:focus, :valid) {
+    border-color: #3751FF;
+}
+
+.form .title-input-email, .title-input-password {
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #9FA2B4;
+
+    text-transform: uppercase;
+}
+
+.form .title-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.form .title-input .title-input-forget a {
+    font-size: 10px;
+    font-weight: 400;
+    color: #9FA2B4;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.form .title-input .title-input-forget a:hover {
+   color:#3751FF;
+}
+
+.form .btn-field {
+    height: 48px;
+    width: 100%;
+}
+
+.form .btn-field button{
+    height: 100%;
+    width: 100%;
+
+    border-radius: 8px;
+    border: none;
+
+    background-color: #3751FF;
+    color: #F8F8F8;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.form .btn-field button:hover {
+    background-color: #29292E;
+}
+
+.form .sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.form .sign-up span{
+    font-size: 14px;
+    font-weight: 400;
+    color:#9FA2B4;
+}
+
+
+.form .sign-up a {
+    color: #3751FF;
+    font-weight: 600;
+
+    margin-left: 5px;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.form .sign-up a:hover {
+    color: #29292E;
+}
+/*-----------------------------*/
+
+/*Media queries para responsividade*/
+
+@media screen and (max-width: 350px) {
+    .container .form .subtitle h1 {
+        font-size: 18px;
+    }
+    
+    .container .form .subtitle span {
+        font-size: 11px;
+    }
+}

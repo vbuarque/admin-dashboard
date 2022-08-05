@@ -1,9 +1,9 @@
-
+import { SignIn } from "./screens/SignIn";
 
 function App() {
   return (
     <div className="App">
-      teste
+      <SignIn/>
     </div>
   );
 }
