@@ -1,0 +1,42 @@
+.home {
+  display: flex;
+  background-color: #f7f8fc;
+
+  .home-container {
+    flex: 6;
+
+    .chart-container{
+      border: 3px solid #DFE0EB;
+    }
+
+    .content-charts {
+      margin: 25px;
+
+      .chart-information-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        height: 114px;
+        border: 1px solid #dfe0eb;
+
+        margin-left: 32px;
+
+        padding: 32px;
+
+        .item-title {
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 6px;
+          color: #9fa2b4;
+        }
+        .item-subtitle {
+          font-size: 24px;
+          font-weight: 700;
+          color: #29292e;
+        }
+      }
+    }
+  }
+}

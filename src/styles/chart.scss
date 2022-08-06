@@ -1,0 +1,47 @@
+.chart {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: column;
+    padding: 32px;
+    flex: 4;
+    max-width: 716px;
+    width: 100%;
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 54px;
+
+        width: 100%;
+
+        .title-chart {
+            h3{
+                font-size: 19px;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+
+            span {
+                font-size: 12px;
+                font-weight: 400;
+                color: #9FA2B4;
+            }
+        }
+
+        .chart-description {
+            margin-right: 32px;
+            .blue-description{
+                color: #3751FF;
+            }
+            span {
+                font-size: 12px;
+                font-weight: 600;
+                color: #9FA2B4;
+                margin-left: 32px;
+            }
+        }
+    }
+}

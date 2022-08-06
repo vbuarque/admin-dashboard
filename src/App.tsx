@@ -1,11 +1,11 @@
+import { Overview } from "./screens/Overview";
 import { SignIn } from "./screens/SignIn";
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
-      <SignIn/>
+      <Overview />
     </div>
   );
 }
-
-export default App;
